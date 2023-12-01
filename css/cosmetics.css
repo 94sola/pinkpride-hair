@@ -1,0 +1,411 @@
+:root
+{
+    --pink: #fd68d0;
+    --black: #0f0c2ce1;
+    --box-shadow: 0 .5rem 1.5rem rgb(243, 99, 207);
+    --light-color: #666;
+    --deep-pink: rgb(255, 32, 207);
+    --dark-pink: rgb(248, 9, 169);
+    --outline: .1rem solid rgba(0, 0; 0.1);
+    --border: 2rem solid rgba(0, 0, 0.1);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+body {
+    background: #eee;
+}
+
+/* css code for banner*/
+section
+{
+    padding: 2rem 9%;
+
+}
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 7rem;
+    color: var(--white);
+    font-family: 'Audiowide', cursive;
+}
+
+.heading span
+{
+    background: transparent;
+    color: var(--pink);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+/* css code for header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    border: 0px solid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 13%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+header .logo 
+{
+   font-size: 2.5rem; 
+   font-weight: bolder;
+   font-family: 'Audiowide', sans-serif;
+   top: 4%;
+   left: 50%;
+   position: absolute;
+   padding-top: 1rem;
+   padding-bottom: 1.8rem;
+}
+
+header .logo i
+{
+   color: var(--pink);
+}
+
+ .navbar .nav-links .links
+{
+   font-size: 1.76rem; 
+   margin: auto;
+   color: var(--white);
+   padding: 0 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--deep-pink);
+   list-style: none;
+}
+
+.navbar .links li a
+{
+    justify-content: space-between;
+    align-items: center;
+    color: var(--deep-pink);
+    margin: .6rem;
+    text-decoration: none;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.navbar li a:hover
+{
+    color: var(--pink);
+    text-decoration: underline;
+    background: transparent;
+}
+
+.header .navbar .links li
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+.header .navbar .links li .arrow
+{
+    background: transparent;
+    height: 50%;
+    line-height: 70px;
+    width: 22px;
+    text-align: center;
+    color: var(--dark-pink);
+    transition: all .2s ease;
+}
+
+.header .navbar .links li:hover .catego-arrow
+{
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-memu
+{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: var(--dark-pink);
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: var(--box-shadow);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-memu li
+{
+    padding: 0 22px;
+    border-bottom: 1px solid var(--deep-pink);
+}
+
+.navbar .nav-links .links .sub-memu li a
+{
+    color: var(--white);
+   font-size: 15px;
+   font: 500;
+}
+
+.navbar .nav-links .links li:hover .catego-sub-menu
+{
+    display: block;
+}
+
+.header .icons div
+{
+    border: 1px solid;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: var(--white);
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover
+{
+    background: var(--pink);
+    color: var(--white);
+}
+
+#menu-btn
+{
+    display: none;
+}
+
+.header .navbar.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form
+{
+    position: absolute;
+    border: 0px solid;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input
+{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label
+{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.header .search-form label:hover
+{
+    color: var(--pink);
+}
+
+.header .login-form
+{
+    border: 0px solid;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 1rem;
+    background: var(--dark-pink);
+    text-align: center;
+    width: 35rem;
+
+}
+
+.header .login-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3
+{
+    font-size: 2.5rem;
+    color: var(--pink);
+    text-transform: uppercase;
+}
+
+.header .login-form .box
+{
+    border: 1px solid;
+    margin: .7rem;
+    background: var(--dark-pink);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p
+{
+    font-size: 1.4rem;
+    padding: .4rem 0;
+    color: var(--white);
+}
+
+.header .login-form p a
+{
+    color: var(--pink);
+    text-decoration: underline;
+}
+/* css code for header*/
+
+
+/* css code for home*/
+.btn
+{
+    border: 1px solid rgba(5, 5, 65, 0.925);
+    margin-top: .8rem;
+    display: inline-block;
+    padding: .8rem 1rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--white);
+    cursor: pointer;
+    background: var(--pink);
+}
+
+.btn:hover
+{
+    background: var(--dark-pink);
+    color: #fff;
+}
+
+/* media queries */
+@media (max-width: 991px)
+{
+    html
+    {
+        font-size: 75.5%;
+    }
+
+    .header
+    {
+        padding: 3rem;
+    }
+
+    section
+    {
+        padding: 2.9rem;
+    }
+
+    .about .box-container
+    {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 2.6rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header .search-form
+    {
+        width: 90%;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 50rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: var(--white);
+        color: var(--white);
+    }
+
+    .header .navbar a
+    {
+        font-size: 1.3rem;
+        margin: .2rem .1rem;
+        display: block;
+        padding-left: 1rem;
+    }
+     
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 56.6%;
+    }
+
+    .heading
+    {
+        font-size: 6rem;
+    }  
+    .footer
+    {
+        text-align: center;
+    }   
+}

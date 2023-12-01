@@ -555,6 +555,15 @@ text-align: center;
     text-align: center;
 }
 
+.icon-description p
+{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: rgba(5, 5, 65, 0.925);
+    padding: 1rem 0;
+    text-transform: none;
+    text-align: center;
+}
 
 
 

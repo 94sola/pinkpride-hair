@@ -486,81 +486,34 @@ text-align: center;
     margin-bottom: 2px;
 }
 
-.about .banner
-{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 6.5rem;
-}
 
-.banner .ban1
+.aboutp
 {
-    border: 3px solid #fc84b4;
-    border-radius: 100%;
-    background: #fc84b4;
-}
-
-.banner .ban2
-{
-    border: 3px solid #fc84b4;
-    border-radius: 100%;
-    background: #fc84b4;
-}
-
-.banner .ban3
-{
-    border: 3px solid #fc84b4;
-    border-radius: 100%;
-    background: #fc84b4;
-}
-
-.banner .ban4
-{
-    border: 3px solid #fc84b4;
-    border-radius: 100%;
-    background: #fc84b4;
-}
-
-.about .banner img
-{
-    width: 40px;
-    object-fit: contain;
-    height: 40px;
-}
-
-.about img:hover
-{
-    transform: scale(1.1);
-}
-
-.about .text .box
-{
-    border: 0px solid rgba(0, 36, 243, 0.61);
-    padding: 3rem 2rem;
-    background: #eee;
-    outline: var(--outline);
-    outline-offset: -1rem;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-}
-
-.about p
-{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: rgba(5, 5, 65, 0.925);
-    padding: 1rem 0;
     text-transform: none;
     text-align: center;
 }
 
-.icon-description p
+.aboutp .pride-about
 {
-    font-size: 1.5rem;
-    line-height: 1.8;
+    padding: 30px 15px 0px;
+    color: #3B3042;
+    font: 16px 'Raleway', sans-serif;
+}
+
+ .aboutp .pride-about .icon-box
+{
+    color: #fc84b4;
+    padding: 38px;
+    font: 30px 'Raleway', sans-serif;
+    
+}
+
+.aboutp .icon-text p
+{
+    
+    line-height: 1.7;
     color: rgba(5, 5, 65, 0.925);
-    padding: 1rem 0;
+    padding: .6rem ;
     text-transform: none;
     text-align: center;
 }
